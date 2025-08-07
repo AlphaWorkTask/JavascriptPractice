@@ -62,6 +62,8 @@
          }
         
     ]
+
+        //  These are called MUTATING METHODS because the original array is changed by these methods
     // Push method
     // const pushed = population.push(ruby = { age:"25",job: "teacher",numberOfFamily :"6"})  
     // pop method removes the last element 
@@ -85,9 +87,65 @@
 // Reverse Method 
 // const sorted = population.reverse()
 
+// Fill Method 
 const fill = population.fill(uc = {age:"333", job :"hwekhw", numberOfFamily:"23232"},0,2)
 
         console.log( population)
+
+      
+
+
+//These are NON-MUTATING METHODS because they return some value without changing the original array
+
+const users = [
+  { id: 1, name: "Aisha Khan", age: 28, email: "aisha.khan@example.com" },
+  { id: 2, name: "Zain Raza", age: 34, email: "zain.raza@example.com" },
+  { id: 3, name: "Fatima Noor", age: 22, email: "fatima.noor@example.com" }
+];
+
+const products = [
+  { id: "p101", name: "Wireless Mouse", price: 25.99, inStock: true },
+  { id: "p102", name: "Bluetooth Speaker", price: 49.99, inStock: false },
+  { id: "p103", name: "Mechanical Keyboard", price: 89.99, inStock: true }
+];
+
+//concat()
+
+const user_prod_together = users.concat(products)
+
+console.log(user_prod_together)
+
+// slice()  the return is not array, it shows them taking them out of the array
+
+const numbers = [0,1,2,3,4,5,6]
+const sliced = numbers.slice(1,5)
+console.log("sliced is "+ sliced)
+
+//map()
+
+const increasedPrice = products.map((item)=>item.price*2) 
+
+console.log("increased price = "+increasedPrice )
+
+// filter()
+
+// const youngCustomers = users.filter(item=>(item.age<"30"))
+// console.log("young users" = youngCustomers)
+
+  // prompt
+        // let findingAge = prompt("What is your age","100");
+        // alert("your age is "+findingAge)
+
+        // type Conversion
+    let age = 34
+    console.log(typeof(age))
+    age = String(age)
+    console.log(typeof(age))
+
+let here = true
+console.log(typeof(here))
+here = String(here)
+console.log(typeof(here))
 
 </script>
 </html>

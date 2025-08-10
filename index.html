@@ -142,10 +142,29 @@ console.log("increased price = "+increasedPrice )
     age = String(age)
     console.log(typeof(age))
 
-let here = true
-console.log(typeof(here))
-here = String(here)
-console.log(typeof(here))
+    let here = true
+    console.log(typeof(here))
+    here = String(here)
+    console.log(typeof(here))
+
+         //Conditions in Javascript
+
+    let candidatesAge = 34;
+
+    if (candidatesAge < 18) {
+        console.log("you are younger than the required age")
+    } else if(candidatesAge > 45) {
+        console.log("you are older than the required age")
+        
+    }else{
+        console.log("you are eligible, yyeeaaaaaahhhhh!")
+    }
+
+    let yourage = prompt("enter your age")
+
+    let allowance =  (yourage > 18 ) ? "you are allowed to watch" : "you are not allowed to watch, Sorry";
+
+    console.log(allowance)
 
 </script>
 </html>
